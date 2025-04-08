@@ -63,7 +63,7 @@ data Permutation : (xs: Vect n Nat) -> (ys: Vect n Nat) -> Type where
     ||| If we know that `as` and `bs` are permutations of each other, and we know that `bs`
     ||| and `cs` are permutations of each other, then we know that `as` and `cs` are
     ||| permutations of each other.
-    PermutationTrans : (as, bs, cs : Vect n Nat) ->
+    PermutationTrans: (as, bs, cs : Vect n Nat) ->
       Permutation as bs -> Permutation bs cs -> Permutation as cs
 
 ||| In dependently typed languages, functions correspond to theorems.
