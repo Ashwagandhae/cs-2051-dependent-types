@@ -1,4 +1,4 @@
-module Main
+module MainSota
 import Data.Vect
 import Data.Nat
 
