@@ -181,7 +181,7 @@ lteTotal (S n) (S m) =
 ||| that contains `x` and all elements in `inList` and is sorted.
 ||| Function: Takes a list `inList`, a proof that `inList` is sorted, and an element `x`. Creates
 ||| a new list `outList` by inserting `x` into `inList`. Returns `outList`, a proof that `outList` is sorted,
-||| and a proof that `inList` is a permutation of `outList`.
+||| and a proof that `outList` is a permutation of `x::inList`.
 insert : (inList : Vect n Nat) -> (Sorted inList) -> (x : Nat)
   -> (outList : Vect (S n) Nat ** (Sorted outList, Permutation (x::inList) outList))
 -- Base case: We can insert an element into an empty list to get a sorted list.
